@@ -15,7 +15,7 @@ training_set = train_datagen.flow_from_directory('path/dataset/train_set',
                                                     batch_size = 32,
                                                     class_mode = 'binary')
 test_datagen = ImageDataGenerator(rescale = 1./255)
-test_set = test_datagen.flow_from_directory('path/dataset/train_set',
+test_set = test_datagen.flow_from_directory('path/dataset/test_set',
                                                 target_size = (64, 64),
                                                 batch_size = 32,
                                                 class_mode = 'binary')
